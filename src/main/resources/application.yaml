@@ -1,0 +1,13 @@
+spring:
+  servlet:
+    mulyipart:
+      max-file-size: 50MB
+
+
+jasypt:
+  encryptor:
+    password: {$JASYPT_ENCRYPTOR_PASSWORD:}
+amazon:
+  s3:
+    accsesKey: ENC(+GE0hO0uAaRBzWaY5lmbGHgyjPy6uuc3RIl4oZKYjHA=)
+    secretKey: ENC(88pd8nQUoeQrOlYfcgA2yC+6Sw+Itdi8YeneX4mKzWISjbiaLiugKS8iFd7ALrgw2vh573r54bI=)

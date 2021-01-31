@@ -20,7 +20,7 @@ public class FakeUserProfileRepositoryImpl implements FakeUserProfileRepository 
                             .build());
         USER_PROFILE.add(ProfileUser.builder()
                             .userProfileId(UUID.randomUUID())
-                            .name("Joan")
+                            .name("Dan")
                             .build());
     }
 
