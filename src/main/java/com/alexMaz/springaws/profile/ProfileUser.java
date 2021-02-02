@@ -1,15 +1,19 @@
 package com.alexMaz.springaws.profile;
 
+import com.amazonaws.services.apigateway.model.Op;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Objects;
+import java.util.Optional;
 import java.util.UUID;
 
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class ProfileUser {
 
     private UUID userProfileId;
@@ -24,6 +28,9 @@ public class ProfileUser {
         return Objects.equals(userProfileId, that.userProfileId) &&
                 Objects.equals(name, that.name) &&
                 Objects.equals(userImageLink, that.userImageLink);
+    }
+    public Optional<String> getUserImageLink() {
+        return Optional.ofNullable(userImageLink);
     }
 
     @Override
